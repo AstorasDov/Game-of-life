@@ -10,8 +10,8 @@ let grid = new Array(rows).fill(0).map((row)=>new Array(columns).fill(0).map(()=
 const drawGrid = () => {
   for(let y = 0;y < rows; y++){
     for(let x = 0;x < columns; x++){
-      if(grid[y][x]){ctx.fillStyle="#004466";ctx.fillRect(x*unit,y*unit,unit,unit);}
-      else{ctx.fillStyle="#f4f1de";ctx.fillRect(x*unit,y*unit,unit,unit);}
+      if(grid[y][x]){ctx.fillStyle="black";ctx.fillRect(x*unit,y*unit,unit,unit);}
+      else{ctx.fillStyle="white";ctx.fillRect(x*unit,y*unit,unit,unit);}
     }
   }
 }
